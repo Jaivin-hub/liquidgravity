@@ -1,0 +1,408 @@
+.content-header {
+    width: 100%;
+    background-color: #fff;
+    height: 75px;
+    margin: 0;
+    padding: 2px 20px 5px 299px;
+    position: absolute;
+}
+
+.logouttext{
+    color: #000;
+
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.logoutlogocontainer{
+    width: 41px;
+height: 41px;
+flex-shrink: 0;
+fill: #787070;
+display: flex; /* Added this line to enable flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */ 
+}
+
+.header-container{
+    display: flex;
+  align-items: center; /* Vertically center the items */
+  justify-content: space-between;
+}
+
+.logout-container {
+    margin-left: auto; /* Pushes the logout container to the right */
+    display: flex;
+  }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.navbar {
+    background: #4a7746;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.headerlogo{
+    padding-left: 33px;
+    padding-top: 23px;
+}
+
+.navbar>li>a i {
+    margin-right: 10px;
+    width: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.navbar>li>a:hover,
+.navbar>li.active>a {
+    background: #335230;
+}
+
+.navbar>li>a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.brand {
+    background: #3e523d;
+    color: #fff;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px 10px;
+    font-size: 25px;
+}
+
+.brand a:hover {
+    background: #444;
+}
+
+.brand a {
+    padding: 5px 10px;
+    float: right;
+    box-sizing: border-box;
+    color: #fff;
+    background: #4a7746;
+}
+
+.hideNav {
+
+    visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+
+    ul.navbar {
+        height: 100vh;
+        width: 80px;
+    }
+
+    ul.navbar li span {
+        visibility: hidden;
+    }
+
+    ul.navbar li a i {
+        font-size: 30px;
+        padding-top: 22px;
+
+        vertical-align: middle;
+    }
+
+    ul.navbar li {
+        text-align: center;
+    }
+
+    .btn-bars {
+        visibility: visible;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .brand {
+        padding-right: 10px;
+        background: #3e523d;
+        color: #fff;
+        width: 16.666%;
+    }
+
+    ul.navbar {
+        width: 16.666%;
+    }
+
+    ul.navbar.hideNav {
+        width: 100px;
+        visibility: visible;
+    }
+
+    ul.navbar.hideNav {
+        height: 100vh;
+        width: 80px;
+    }
+
+    ul.navbar.hideNav li span {
+        visibility: hidden;
+    }
+
+    ul.navbar.hideNav li a i {
+        font-size: 30px;
+        padding-top: 22px;
+
+        vertical-align: middle;
+    }
+
+    ul.navbar.hideNav li {
+        text-align: center;
+    }
+
+    ul.navbar.hideNav li span {
+        text-align: left;
+        visibility: visible;
+    }
+
+    ul.navbar li span {
+        text-align: left;
+        visibility: visible;
+    }
+
+    ul.navbar li a i {
+        font-size: 18px;
+        padding-top: 0px;
+        vertical-align: baseline;
+    }
+
+    ul.navbar li a {
+        padding-top: 22px;
+        font-size: 18px;
+
+    }
+
+    ul.navbar li {
+        text-align: left;
+    }
+}
+
+.bg-dark {
+    background-color: #fff !important;
+}
+
+
+
+.Left-arrow {
+    margin-left: 0px;
+}
+
+
+
+
+
+.header-respones {
+    background-color: #fff;
+    min-height: 74px;
+    padding: 0;
+    width: calc(100% - 50px);
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    margin: 0;
+    border-bottom: 1px #EAECF0 solid;
+}
+
+.header-fix{
+    width: calc(100% - 252px);
+    background-color: #fff;
+    min-height: 75px;
+    margin: 0;
+    padding: 0;
+    float: right;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+
+.header-right ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-right {
+    width: 100%;
+    float: left;
+}
+
+.header-right input {
+    margin: 15px;
+    padding: 10px;
+    width: 400px;
+
+    border: #E7E7E8;
+    outline: none;
+    float: right;
+    border-radius: 10px;
+}
+
+
+
+#custom-search-input .search-query {
+    padding-left: 15px;
+    margin-bottom: 0;
+    border-radius: 3px;
+   /* border: 1px solid #E7E7E8;*/
+    border-radius: 10px;
+    font-size: 14px;
+    min-height: 40px;
+}
+
+#custom-search-input button {
+    border: none;
+    background: none;
+    padding: 2px 5px;
+    top: 5px;
+    position: absolute;
+    right: 5px;
+    margin-bottom: 0;
+    border-radius: 3px;
+    outline: 0 !important;
+    box-shadow: inherit !important;
+    width: auto;
+}
+
+.search-query:focus+button {
+    z-index: 3;
+}
+
+
+.input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100% !important;
+    float: right;
+}
+
+.header-right ul.navbar-right {
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 3px 1px #ddd;
+    width: 200px;
+}
+
+.header-right ul.navbar-right li.active,
+.header-right ul.navbar-right li:hover {
+
+    background: #f4f4f4;
+}
+
+.header-right ul.navbar-right li a i {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.header-right ul.navbar-right li a {
+    text-decoration: none;
+    padding: 10px 10px;
+    display: block;
+    color: #333;
+}
+
+.blog-user {
+    float: right;
+}
+
+.blog-user a.avator img {
+    float: right;
+}
+
+.avator {
+    height: 55px;
+    width: 55px;
+    margin-top: 5px;
+    margin-right: 15px;
+    float: left;
+
+}
+
+.avator img {
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 60%;
+    border: 1px solid #E7E7E8;
+    width: 60%;
+}
+
+.header-right ul.navbar-right li {
+    z-index: 9999;
+    border-bottom: 1px solid #e1e1e1;
+    background: #fff;
+
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+@media screen and (min-device-height:375px) and (max-device-height:667px) {
+
+    .header-respones {
+        min-width: 100%;
+        background-color: #fff;
+        min-height: 75px;
+        margin: 0;
+        /* padding: 0px 0px 0px 265px; */
+        padding: 0px 0px 0px 40px;
+        width: calc(100% - 1px);
+        height: auto;
+        top: 70px;
+        float: left;
+        margin: 0;
+    }
+    .user-card .name {
+        font-weight: bold;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-top: -55px !important;
+        color: white;
+        float: left;
+        margin-left: -60px;
+    }
+
+    .header {
+        height: 70.48px;
+        width: 100%;
+        width: 100%;
+        background-color: #fff;
+        height: 75px;
+        margin: 0;
+        padding: 0px 0px 0px 40px !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .Left-arrow {
+        margin-left: 0;
+    }
+    .header-fix .navbar { padding: .5rem 10px;}
+}

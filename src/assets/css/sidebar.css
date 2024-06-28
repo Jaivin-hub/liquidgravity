@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .page {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .content {
+    width: calc(100% - 50px);
+    margin-left: auto;
+    padding: 15px;
+    height: 100%;
+    word-break: break-word;
+  }
+  
+  a {
+    color: #344054 !important;
+    text-decoration: none !important;
+    background-color: transparent;
+  }
+
+  .selectionsquare {
+    width: 39px;
+    height: 39px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #2C7BE5;
+    display: flex; /* Added this line to enable flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+  } 
+
+  .toplogobackground{
+    width: 99px;
+    height: 73px;
+    flex-shrink: 0;
+    background: #2C7BE5;   
+    display: flex; /* Added this line to enable flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */ 
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99px;
+    height: 100%;
+    color: #344054;
+    background: #FFF;
+    z-index: 11;
+  
+    transition: width 0.3s ease;
+    border-right: 1px #EAECF0 solid;
+    /* padding-top: 15px; */
+  }
+  
+  .sidebar-close .logo_icon {
+    display: none;
+  }
+  
+  .sidebar .sidebar-position {
+    min-height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    text-align: left;
+  }
+  
+  .sidebar--open .trigger .logo_icon {
+    display: block;
+    padding: 22px;
+  }
+  
+  .sidebar--open .trigger .mob_logo_icon {
+    display: none;
+  }
+  
+  .sidebar-close .lady-pic {
+    display: none;
+  }
+  
+  
+  .logout-div {
+    border-top: 1px solid #EAECF0;
+    padding: 20px 0px 0px 0px;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    z-index: 11;
+    background: #FFF;
+  
+    width: 100%;
+    max-width: 99px;
+  }
+  .sidebar-close .logout-div {
+    max-width: 96px;
+  }
+  .sidebar-close .sidebar-position a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .sidebar .sidebar-position:hover {
+    background-color: #F9FAFB;
+    color: #0097A7;
+    box-shadow: inherit !important;
+  }
+  .sidebar .logout-div .sidebar-position{
+    padding: 0 15px;
+  }
+  .sidebar .profilePic{
+    width: 30px;
+    height: 30px;
+    border-radius: 60px;
+    border: 1px solid #ddd;
+    object-fit: cover;
+    min-width: 30px;
+    min-height: 30px;
+  }
+  .sidebar-close .profilePic{ display: none;  } 
+  
+  .sidebar-close .logout-div .sidebar-position {
+    padding: 0 0;
+    justify-content: center;
+  }
+  .sidebar svg {
+    color: #e84a5f;
+    min-width: 25px;
+  }
+  
+  .sidebar span {
+    width: 0;
+    height: 0;
+    padding: 0 15px;
+    transition: width 0.3s ease;
+    /*color: #c9c9c9;*/
+  
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .sidebar--open {
+    width: 177px;
+    transition: width 0.3s ease;
+    position: fixed;
+    z-index: 11;
+  }
+  
+  .sidebar--open .sidebar-position span {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .sidebar-close .trigger {
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 15px 15px;
+  }
+  
+  .sidebar-close .sidebar-position {
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 5px 15px;
+    justify-content: center;
+    width: 100%;
+  }
+  .sidebar-close .sidebar-position span{ display: none; }
+  
+  .trigger {
+    min-height: 65px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0px 15px;
+  }
+  
+  
+  .sidebar .content-dash {
+    padding: 1px 16px;
+    height: auto;
+    top: 70px;
+    width: calc(100% - 15px);
+    margin: 0;
+    padding: 165px 20px 5px 10px;
+    float: right;
+  }
+  
+  .sidebar .sidebar-position a {
+    display: flex;
+    align-items: center;
+  }
+  .sidebar .active { color: var(--primary) !important; }
+  
+  .sidebar .active img.menu_icon{ display: none !important; }
+  
+  .sidebar .active img.menu_icon.actIc{ display: inline-block !important; }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 991px) {
+  
+    .sidebar--open {
+      width: 100px;
+    }
+  
+    .sidebar--open .sidebar-position span,
+    .sidebar--open .trigger .logo_icon,
+    .sidebar img.lady-pic,
+    .sidebar-close .mob_logo_icon {
+      display: none;
+    }
+  
+    .sidebar--open .trigger .mob_logo_icon,
+    .sidebar-close .logo_icon,
+    .sidebar.sidebar-close img.lady-pic {
+      display: block;
+    }
+  
+    .header-fix {
+      width: calc(100% - 50px);
+    }
+  
+    .sidebar .sidebar-position {
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      justify-content: center;
+      min-width: 50px;
+    }
+  
+    .sidebar .trigger {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      min-width: 50px;
+    }
+  
+    .sidebar.sidebar-close {
+      position: fixed;
+      z-index: 999;
+      max-width: 100px;
+      width: 500%;
+      padding: 15px 20px;
+      box-shadow: 0 3px 16px #00000012;
+    }
+  
+    .sidebar.sidebar-close .sidebar-position span {
+      width: auto;
+      height: auto;
+      white-space: inherit;
+      overflow: inherit;
+      text-overflow: inherit;
+    }
+  
+    .sidebar.sidebar-close .sidebar-position {
+      min-width: 100%;
+      width: 100%;
+      justify-content: left;
+    }
+  
+    .sidebar.sidebar-close a {
+      display: flex;
+    }
+  
+    .sidebar-close .trigger {
+      justify-content: left;
+    }
+  
+    .user-card .imgSpc {
+      margin: -40px 10px -15px 0;
+    }
+  }
+  
+  @media screen and (max-width:767px) {}

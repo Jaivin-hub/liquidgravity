@@ -17,14 +17,20 @@ body {
 
   .subdetailsbox{
     background-color: #0A9B21;
-    margin-top: 40%;
   }
   
   .dashboard {
-    display: flex; /* Enable flexbox */
-    /* gap: 20px; Adjust the gap between the components as needed */
+    display: flex;
+    width: calc(100% - 130px);
+    margin-left: 115px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+
   }
-  
+  .wraper{
+    float: left;
+    width: 100%;
+  }
   
   .filtering {
     margin-bottom: 54px;
@@ -60,10 +66,10 @@ body {
   .tophead{
     display: flex;
     justify-content: space-between; /* Space out the items */
-  align-items: center; /* Align items vertically center */
-  padding: 10px; 
+    align-items: center; /* Align items vertically center */
+    padding: 5px 0 10px 0px; 
   }
-  
+
   
   
   .dash-round-grahp {
@@ -119,7 +125,11 @@ body {
   }
 
   .listview{
-    margin-top:28px;
+    margin: 0px;
+  }
+  .listview.scroll{
+    overflow-y: auto;
+    max-height: 220px;
   }
 
   .imageavatharM{
@@ -175,21 +185,15 @@ flex-shrink: 0;
 
   .subdetailsbox2{
     background-color: #fff;
-    margin-top: 6%;
-    width: 157%;
-    margin-left: 12px;
     border-radius: 10px;
-    height: 41vh;
+    min-height: 40vh;
     padding: 20px;
   }
 
   .subdetailsbox{
     background-color: #fff;
-    margin-top: 37%;
-    width: 157%;
-    margin-left: 12px;
     border-radius: 10px;
-    height: 41vh;
+    min-height: 40vh;
     padding: 20px;
   }
 
@@ -1844,7 +1848,7 @@ line-height: normal;
     font-size: 14px;
   }
   
-  
+ .sideSpc { padding-left: 5px; }  
   
   
   
@@ -2003,8 +2007,14 @@ line-height: normal;
       min-width: 25px;
     }
     .radOuter { min-height: auto; }
-  }
-  @media screen and (max-width: 380px) {
+    .sideSpc {
+      padding-left: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 380px) {
   
     .donut-count-number { top: 29%; font-size: 30px; }
-  }
+ }

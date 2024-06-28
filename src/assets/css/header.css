@@ -364,41 +364,6 @@ ul.navbar {
 }
 
 
-@media screen and (min-device-height:375px) and (max-device-height:667px) {
-
-    .header-respones {
-        min-width: 100%;
-        background-color: #fff;
-        min-height: 75px;
-        margin: 0;
-        /* padding: 0px 0px 0px 265px; */
-        padding: 0px 0px 0px 40px;
-        width: calc(100% - 1px);
-        height: auto;
-        top: 70px;
-        float: left;
-        margin: 0;
-    }
-    .user-card .name {
-        font-weight: bold;
-        font-size: 20px;
-        text-transform: uppercase;
-        margin-top: -55px !important;
-        color: white;
-        float: left;
-        margin-left: -60px;
-    }
-
-    .header {
-        height: 70.48px;
-        width: 100%;
-        width: 100%;
-        background-color: #fff;
-        height: 75px;
-        margin: 0;
-        padding: 0px 0px 0px 40px !important;
-    }
-}
 
 @media screen and (max-width: 991px) {
     .Left-arrow {

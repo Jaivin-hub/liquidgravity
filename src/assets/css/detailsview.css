@@ -1,10 +1,7 @@
 .detailsview {
-  margin-top: 7%;
   background: white !important;
-  width: 60%;
-  margin-left: 9%;
   border-radius: 10px;
-  padding: 48px;
+  padding: 20px;
 }
 
 .ium-input-container {
@@ -50,32 +47,41 @@ flex-direction: row !important;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin: 0;
 }
 
 .secondlayer {
-  margin-top: 48px;
+  margin-top: 20px;
 }
 
 .trybtn {
-  width: 90px;
+  width: 100%;
   height: 40px;
   flex-shrink: 0;
   border-radius: 8px;
   background: #2C7BE5;
+  color: white;
   border: none;
   cursor: pointer;
-  margin-top: 19px;
+  margin-top: 24px;
 }
 
+.pl-3{ padding-left: 1rem; }
+
+.pl-0 {
+  padding-left: 0;
+}
+.pr-0{ padding-right: 0; }
+
 .IUMbtn{
-  width: 90px;
+  width: 100%;
   height: 40px;
   flex-shrink: 0;
   border-radius: 8px;
-border: 1px solid #E0DCEA;
-background: #FFF;
+  border: 1px solid #E0DCEA;
+  background: #FFF;
   cursor: pointer;
-  margin-top: 19px;
+  margin-top: 24px;
 }
 
 .addbtn {
@@ -84,8 +90,10 @@ background: #FFF;
   flex-shrink: 0;
   border-radius: 8px;
   background: #2C7BE5;
+  color: white;
   border: none;
   cursor: pointer;
+  margin-right: 15px;
 }
 
 .cancelbtn {
@@ -100,58 +108,69 @@ background: #FFF;
 
 .pluscontainer{
   display: flex;
-width: 23px;
-height: 23px;
-padding: 7px;
-align-items: center;
-gap: 10px;
-border-radius: 11.5px;
-background: #0B78B3;
-margin-top: 20px;
+  width: 23px;
+  height: 23px;
+  justify-content: center;
+  padding: 5px;
+  align-items: center;
+  border-radius: 15px;
+  background: #0B78B3;
+  margin-top: 33px;
+}
+.pluscontainer img{
+  width: 13px;
+  height: auto;
+  max-width: inherit;
 }
 
 .detailsview .form-row {
-  display: flex;
-  gap: 80px; /* Adjust the gap between inputs as needed */
-  margin-top: 23px;
+  /* display: flex;
+  gap: 80px;  */
+  margin-top: 20px;
 }
 
 .form-roww {
-  display: flex;
-  gap: 25px; /* Adjust the gap between inputs as needed */
-  margin-top: 23px;
+  margin-top: 20px;
 }
 
-.trycontainer {
-  display: flex; /* Enable flexbox */
-  align-items: center; /* Align items vertically center */
-  justify-content: space-between; /* Optional: Adjust as needed */
-  gap: 10px;
-  flex-direction: row !important
-}
-
-.detailsview .form-row div {
-  display: flex;
-  flex-direction: column; /* Stack label on top of input */
-}
 
 .detailsview label {
-  margin-bottom: 5px; /* Space between label and input */
+  margin-bottom: 5px; 
   align-self: stretch;
   color: #000;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-.detailsview input {
+.detailsview input , .detailsview select {
   padding: 5px;
   font-size: 16px;
-  width: 127%; /* Adjust the width as needed */
+  width: 100%; 
   border-radius: 8px;
   border: 1px solid #E0DCEA;
   background: #FFF;
   height: 40px;
+  outline: 0;
+  box-shadow: inherit;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 580px) {
+  .trycontainer .pl-0, .trycontainer .pl-3 {
+    padding-left: 10px;
+  }
+  .pluscontainer {
+    margin: 5px auto;
+    margin-bottom: 0;
+  }
+  .IUMbtn, .trybtn{ margin-top: 10px; }
+
 }

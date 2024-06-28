@@ -8,8 +8,10 @@ function Dashboard() {
   return (
     <Layout>
     <div className='dashboard'>
-        <DetailsView/>
-        <SubdetailsView/>
+        <div className='row'>
+          <DetailsView/>
+          <SubdetailsView/>
+        </div>
     </div>
     </Layout>
   )

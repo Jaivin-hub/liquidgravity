@@ -29,11 +29,11 @@ const Sidebar = props =>
             <div className="toplogobackground">
             <img src={logo} alt="test" className="" />
             </div>
-          <div className="trigger " >
+          {/* <div className="trigger " > */}
             {/* <img  alt="test" style={{ height: "55px", width: '100%', }} /> */}
-            <img src={logo} alt="test" className="logo_icon" />
+            {/* <img src={logo} alt="test" className="logo_icon" /> */}
             {/* <img src={Logomark} alt="test" className="mob_logo_icon" /> */}
-          </div>
+          {/* </div> */}
 
           <div className="sidebar-position" style={{ marginTop: 10 }} >
             <Link to="/project/endominance/dashboard" >
